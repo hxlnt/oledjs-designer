@@ -1,0 +1,27 @@
+{
+  "name": "oledjs-designer",
+  "homepage": "https://github.com/hxlnt/oledjs-designer",
+  "authors": [
+    "hxlnt <partytimehexcellent@gmail.com>"
+  ],
+  "description": "oledjs designer",
+  "main": "index.html",
+  "keywords": [
+    "oled",
+    "iot",
+    "johnny-five"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "file-saver": "^1.3.3"
+  }
+}

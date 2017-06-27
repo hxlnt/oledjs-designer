@@ -1,0 +1,40 @@
+#screen {
+    margin-left: 1vw;
+}
+
+.screenrow {
+    display: flex;
+    align-items: flex-start;
+}
+
+.page {
+    width: .75vw;
+    height: 6vw;
+    flex: 0 1 auto;
+}
+
+.pixel {
+    width: .75vw;
+    height: .75vw;
+    box-sizing: border-box;
+    border: .075vw solid #0f0f0f;
+    cursor: default;
+}
+
+.on {
+    background-color: #a0f9f9;
+}
+
+.off {
+    background-color: #2f2f2f;
+}
+
+.pixel:hover {
+    background-color: #f9a0f9;
+}
+
+#textcursor {
+    width: .75vw;
+    height: 6vw;
+    background-color: #f9a0f9;
+}

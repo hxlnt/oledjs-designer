@@ -6,6 +6,8 @@ Work in progress! A browser-based design tool to accompany [oled.js](https://git
 
  - Use a touchscreen stylus (or mouse) to draw screens
  - Export your drawing as a `.js` buffer file ready for use with `oled-js`
+
+ ![Screenshot](screenshot.png)
  
  ## What will it eventually allow you to do? (aka //TODO)
   - DONE! <s>Choose from multiple OLED resolutions</s>

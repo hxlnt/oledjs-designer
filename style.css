@@ -1,3 +1,7 @@
+html, body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 #screen {
     margin-left: 1.25vw;
     margin-right: 1.25vw;

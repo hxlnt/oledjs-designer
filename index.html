@@ -8,10 +8,19 @@
 <body>
     <div id="screen">
     </div>
+    <BR> OLED width:
+    <select id="oledsize">
+        <option value="128x64">128 x 64</option>
+        <option value="128x32">128 x 32</option>
+        <option value="96x16">96 x 16</option>
+        <option value="64x48">64 x 48</option>
+    </select>
+    <BR>
     <BR>
     <button id="clear">Clear</button>
-    <button disabled>Upload image (.png)</button>
-    <button disabled>Upload image buffer (.js)</button>
+    <button disabled>Upload image (.png)</button> Upload image buffer (.js): <input type="file" id="uploadjs" />
+    <BR>
+    <BR>
     <button id="download">Save image buffer (.js)</button>
     <script src="lib/file-saver/FileSaver.min.js"></script>
     <script src="script.js"></script>

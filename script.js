@@ -4,15 +4,15 @@ let oledbytearray = [];
 drawOLED(128, 64);
 
 // Click handler for turning on individual pixel
-document.getElementById("screen").addEventListener("click", function (e) {
+document.getElementById("screen").addEventListener("pointerdown", function (e) {
     if (e.target && e.target.matches("div.pixel")) {
         e.target.className = "pixel on";
     }
 });
 
 // Mouseover handler for click-and-drag drawing
-document.getElementById("screen").addEventListener("pointerdown", function (e) {
-    if (e.target && e.target.matches("div.pixel")) {
+document.getElementById("screen").addEventListener("pointerover", function (e) {
+    if (e.target && e.target.matches("div.pixel") && (e.buttons == 1)) {
         e.target.className = "pixel on";
     }
 });

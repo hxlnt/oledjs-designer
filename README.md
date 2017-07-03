@@ -12,8 +12,8 @@ Work in progress! A browser-based design tool to accompany [oled.js](https://git
  ## What will it eventually allow you to do? (aka //TODO)
   - DONE! <s>Choose from multiple OLED resolutions</s>
   - DONE! <s>Upload a `.js` buffer file for editing/preview</s>
+  - DONE! <s>Draw with tablet stylus with less difficulty</s>
   - Upload a `.png` for editing/preview
+  - Select different color schemes, including color-banded monochrome displays
   - Erase/fill/other drawing tools
-  - Draw with tablet stylus with less difficulty
-  - Be purty
- 
+  - Add onion-skinned frames for animations (via drawing or `.png` upload)

@@ -1,5 +1,6 @@
 #screen {
-    margin-left: 1vw;
+    margin-left: 1.25vw;
+    margin-right: 1.25vw;
 }
 
 .screenrow {
@@ -11,6 +12,7 @@
     width: .75vw;
     height: 6vw;
     flex: 0 1 auto;
+    background-color: #2f2f2f;
 }
 
 .pixel {

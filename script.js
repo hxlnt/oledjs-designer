@@ -58,7 +58,7 @@ document.getElementById("uploadjs").addEventListener("change", function (e) {
     } else {
         console.log("oops");
     }
-})
+});
 
 
 // Click handler for Download button--calculates byte codes for drawing
@@ -94,7 +94,7 @@ document.getElementById("download").addEventListener("click", function (e) {
     console.log(oledbytearray);
     let exportdata = "module.exports = [" + oledbytearray.toString() + "]"
     let blob = new Blob([exportdata], { type: "text/plain;charset=utf-8" });
-    saveAs(blob, "oled-design.js");
+    saveAs(blob, "oled-design.js.txt");
 });
 
 // Create OLED rows and pages (1x8-pixel groupings)

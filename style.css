@@ -3,12 +3,10 @@ html, body{
 }
 
 #screen, #controls {
-    margin-left: 1.25vw;
-    margin-right: 1.25vw;
+    margin: 1.25vw;
 }
 
 #controls {
-    position: absolute;
     display: block;
 }
 
@@ -18,15 +16,15 @@ html, body{
 }
 
 .page {
-    width: .75vw;
-    height: 6vw;
+    width: .375vw;
+    height: 3vw;
     flex: 0 1 auto;
     background-color: #2f2f2f;
 }
 
 .pixel {
-    width: .75vw;
-    height: .75vw;
+    width: .375vw;
+    height: .375vw;
     box-sizing: border-box;
     border: .075vw solid #0f0f0f;
     cursor: default;
@@ -44,8 +42,6 @@ html, body{
     background-color: #f9a0f9;
 }
 
-#textcursor {
-    width: .5vw;
-    height: 6vw;
-    background-color: #f9a0f9;
+h1 {
+    font-family: 'Rammetto One', 'Arial Rounded', Arial, Helvetica, sans-serif;
 }

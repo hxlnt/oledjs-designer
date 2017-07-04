@@ -1,4 +1,5 @@
 let oledbytearray = [];
+let tool = 'draw';
 
 // Draw empty screen (default: 128 x 64)
 drawOLED(128, 64);
@@ -6,14 +7,16 @@ drawOLED(128, 64);
 // Click handler for turning on individual pixel
 document.getElementById("screen").addEventListener("pointerdown", function (e) {
     if (e.target && e.target.matches("div.pixel")) {
-        e.target.className = "pixel on";
+            if (tool == 'draw') { e.target.className = "pixel on"; }
+            else { e.target.className = "pixel off"; }
     }
 });
 
 // Mouseover handler for click-and-drag drawing
 document.getElementById("screen").addEventListener("pointerover", function (e) {
     if (e.target && e.target.matches("div.pixel") && (e.buttons == 1)) {
-        e.target.className = "pixel on";
+        if (tool == 'draw') { e.target.className = "pixel on"; }
+        else { e.target.className = "pixel off"; }
     }
 });
 
@@ -30,6 +33,12 @@ document.getElementById("oledsize").addEventListener("change", function (e) {
     else if (document.getElementById("oledsize").value == "96x16") { drawOLED(96, 16); }
     else { drawOLED(64, 48); }
 });
+
+// Handler for tool change
+document.getElementById("tool").addEventListener("change", function(e){
+    if (document.getElementById("tool").value == "draw") { tool = "draw" }
+    else { tool = "erase" }
+})
 
 // Handler for .js upload
 document.getElementById("uploadjs").addEventListener("change", function (e) {

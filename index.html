@@ -18,13 +18,18 @@
         <option value="96x16">96 x 16</option>
         <option value="64x48">64 x 48</option>
     </select>
+ | Tool: <select id="tool">
+        <option value="draw">Pencil</option>
+        <option value="eraser">Eraser</option>
+    </select>
+ | <button id="clear">Clear all</button>
+    <BR><BR>
+    <button disabled>Upload image (.png)</button> Upload image buffer (.js.txt): <input type="file" id="uploadjs" />
     <BR>
     <BR>
-    <button id="clear">Clear</button>
-    <button disabled>Upload image (.png)</button> Upload image buffer (.js): <input type="file" id="uploadjs" />
-    <BR>
-    <BR>
-    <button id="download">Save image buffer (.js)</button>
+    <button id="addframe" disabled>Add animation frame</button>
+    <BR><BR>
+    <button id="download">Save image buffer (.js.txt)</button>
     </div>
     <script src="lib/file-saver/FileSaver.min.js"></script>
     <script src="script.js"></script>

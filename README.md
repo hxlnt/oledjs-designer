@@ -5,7 +5,7 @@ Work in progress! A browser-based design tool to accompany [oled.js](https://git
 `oledjs-designer` can help you design graphics for small monochrome OLED screens. It's built for use with [oled.js](https://github.com/noopkat/oled-js), a super-rad library for drawing to OLEDs via Javascript.
 
  - Use a touchscreen stylus (or mouse) to draw screens
- - Export your drawing as a `.js` buffer file ready for use with `oled-js`
+ - Export your drawing as Javascript ready for use with `oled-js`&mdash;simply remove the `.txt` file ending and include the file in your project.
 
  ![Screenshot](screenshot.png)
  

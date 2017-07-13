@@ -2,6 +2,12 @@ html, body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.undraggable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
 #screen, #controls {
     margin: 1.25vw;
 }

@@ -7,7 +7,7 @@ drawOLED(128, 64);
 // Click handler for turning on individual pixel
 document.getElementById("screen").addEventListener("pointerdown", function (e) {
     if (e.target && e.target.matches("div.pixel")) {
-            if (tool == 'draw') { e.target.className = "pixel on undraggable"; }
+            if (tool == 'draw') { e.target.className = "pixel on"; }
             else { e.target.className = "pixel off"; }
     }
 });
@@ -15,7 +15,7 @@ document.getElementById("screen").addEventListener("pointerdown", function (e) {
 // Mouseover handler for click-and-drag drawing
 document.getElementById("screen").addEventListener("pointerover", function (e) {
     if (e.target && e.target.matches("div.pixel") && (e.buttons == 1)) {
-        if (tool == 'draw') { e.target.className = "pixel on undraggable"; }
+        if (tool == 'draw') { e.target.className = "pixel on"; }
         else { e.target.className = "pixel off"; }
     }
 });
@@ -75,28 +75,28 @@ document.getElementById("download").addEventListener("click", function (e) {
     let pixels = document.querySelectorAll("div.pixel")
     for (i = 0; i < (pixels.length / 8); i++) {
         oledbytearray[i] = 0;
-        if (pixels[i * 8 + 7].className == "pixel on undraggable") {
+        if (pixels[i * 8 + 7].className == "pixel on") {
             oledbytearray[i] += 0x80;
         }
-        if (pixels[i * 8 + 6].className == "pixel on undraggable") {
+        if (pixels[i * 8 + 6].className == "pixel on") {
             oledbytearray[i] += 0x40;
         }
-        if (pixels[i * 8 + 5].className == "pixel on undraggable") {
+        if (pixels[i * 8 + 5].className == "pixel on") {
             oledbytearray[i] += 0x20;
         }
-        if (pixels[i * 8 + 4].className == "pixel on undraggable") {
+        if (pixels[i * 8 + 4].className == "pixel on") {
             oledbytearray[i] += 0x10;
         }
-        if (pixels[i * 8 + 3].className == "pixel on undraggable") {
+        if (pixels[i * 8 + 3].className == "pixel on") {
             oledbytearray[i] += 0x08;
         }
-        if (pixels[i * 8 + 2].className == "pixel on undraggable") {
+        if (pixels[i * 8 + 2].className == "pixel on") {
             oledbytearray[i] += 0x04;
         }
-        if (pixels[i * 8 + 1].className == "pixel on undraggable") {
+        if (pixels[i * 8 + 1].className == "pixel on") {
             oledbytearray[i] += 0x02;
         }
-        if (pixels[i * 8].className == "pixel on undraggable") {
+        if (pixels[i * 8].className == "pixel on") {
             oledbytearray[i] += 0x01;
         }
     }
@@ -123,7 +123,7 @@ function drawOLED(oledwidth, oledheight) {
         let createpage = document.createElement("div");
         let getpage = document.querySelectorAll("div.page");
         for (l = 0; l < 8; l++) {
-            getpage[k].appendChild(createpage.cloneNode(true)).className = "pixel off undraggable";
+            getpage[k].appendChild(createpage.cloneNode(true)).className = "pixel off";
         }
     }
 }

@@ -2,12 +2,6 @@ html, body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.undraggable {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
 #screen, #controls {
     margin: 1.25vw;
 }
@@ -34,6 +28,9 @@ html, body{
     box-sizing: border-box;
     border: .075vw solid #0f0f0f;
     cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 .on {

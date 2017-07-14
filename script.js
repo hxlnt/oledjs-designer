@@ -75,28 +75,28 @@ document.getElementById("download").addEventListener("click", function (e) {
     let pixels = document.querySelectorAll("div.pixel")
     for (i = 0; i < (pixels.length / 8); i++) {
         oledbytearray[i] = 0;
-        if (pixels[i * 8 + 7].className == "pixel on") {
+        if (pixels[i * 8 + 7].className == "pixel on undraggable") {
             oledbytearray[i] += 0x80;
         }
-        if (pixels[i * 8 + 6].className == "pixel on") {
+        if (pixels[i * 8 + 6].className == "pixel on undraggable") {
             oledbytearray[i] += 0x40;
         }
-        if (pixels[i * 8 + 5].className == "pixel on") {
+        if (pixels[i * 8 + 5].className == "pixel on undraggable") {
             oledbytearray[i] += 0x20;
         }
-        if (pixels[i * 8 + 4].className == "pixel on") {
+        if (pixels[i * 8 + 4].className == "pixel on undraggable") {
             oledbytearray[i] += 0x10;
         }
-        if (pixels[i * 8 + 3].className == "pixel on") {
+        if (pixels[i * 8 + 3].className == "pixel on undraggable") {
             oledbytearray[i] += 0x08;
         }
-        if (pixels[i * 8 + 2].className == "pixel on") {
+        if (pixels[i * 8 + 2].className == "pixel on undraggable") {
             oledbytearray[i] += 0x04;
         }
-        if (pixels[i * 8 + 1].className == "pixel on") {
+        if (pixels[i * 8 + 1].className == "pixel on undraggable") {
             oledbytearray[i] += 0x02;
         }
-        if (pixels[i * 8].className == "pixel on") {
+        if (pixels[i * 8].className == "pixel on undraggable") {
             oledbytearray[i] += 0x01;
         }
     }

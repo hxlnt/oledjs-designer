@@ -26,15 +26,15 @@ oled.update();
 ```
 
 The file `examplebuffer.js.txt`, included in this repo, is available for you to use for testing the tools.
- 
+
 ## //TODO
  - DONE! <s>Choose from multiple OLED resolutions</s>
  - DONE! <s>Upload a `.js` buffer file for editing/preview</s>
  - DONE! <s>Draw with tablet stylus with less difficulty</s>
  - DONE! <s>Add erase tool</s>
  - Improve UI
- - Fix accidental div dragging
- - Upload a `.png` 
+ - DONE! <s>Fix accidental div dragging</s>
+ - Upload a `.png`
  - Select different color schemes, including color-banded monochrome displays
  - Add more drawing tools
  - Add onion-skinned frames for animations (via drawing or `.png` upload)

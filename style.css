@@ -28,6 +28,9 @@ html, body{
     box-sizing: border-box;
     border: .075vw solid #0f0f0f;
     cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 .on {

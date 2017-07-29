@@ -1,13 +1,13 @@
 html, body{
     font-family: Helvetica, Arial, sans-serif;
-}
-
-#screen, #controls {
+    background: #DADADA;
+    color: #2D2D2D;
     margin: 1.25vw;
 }
 
 #controls {
     display: block;
+    max-width: 1036px;
 }
 
 .screenrow {
@@ -28,6 +28,9 @@ html, body{
     box-sizing: border-box;
     border: .075vw solid #0f0f0f;
     cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 .on {
@@ -43,5 +46,141 @@ html, body{
 }
 
 h1 {
-    font-family: 'Rammetto One', 'Arial Rounded', Arial, Helvetica, sans-serif;
+    color: #4990E2;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button-row {
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.button-row.first {
+  border-right: 1px solid #4990E2;
+  width: 596px;
+}
+
+.button-row.last {
+  margin-left: 50px;
+}
+
+button {
+  background:none;
+  border:none;
+  font-size:1em;
+  cursor: pointer;
+}
+
+.btn {
+  display: block;
+  margin: 20px 0;
+  padding: 5px 10px;
+  border: 1px solid #2D2D2D;
+  border-radius: 15px;
+  width: 250px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.custom-file-upload input {
+  display: none;
+}
+
+#clear {
+  margin-left: 20px;
+}
+
+.toolbox-container {
+  margin: 20px 0;
+  padding: 25px 0 40px;
+  border-top: 1px solid #4990E2;
+  border-bottom: 1px solid #4990E2;
+}
+
+.select-container {
+  float: left;
+  padding: 10px 20px 10px 0;
+  border-right: 1px solid #4990E2;
+}
+.select-container:last-of-type {
+  margin-left: 20px;
+  margin-right: 50px;
+}
+/* ==========  Select Field Start ========== */
+/* Style Select Field */
+
+select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 100%;
+  padding: 4px 0;
+  font-size: 16px;
+  color: rgba(0,0,0, 0.26);
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #4990E2;
+}
+
+/* Remove focus */
+select:focus {
+  outline: none;
+}
+
+.material-select select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #4990E2;
+}
+
+.material-select {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+}
+
+.material-select:after {
+  position: absolute;
+  top: 0.75em;
+  right: 0.5em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: .25em solid transparent;
+  border-right: .25em solid transparent;
+  border-top: 0.375em solid #4990E2;
+  pointer-events: none;
+}
+/* ==========  Select Field End ========== */
+
+/* ========== Mobile ========== */
+
+@media only screen and (max-width : 768px) {
+  .select-container {
+    float: none;
+    border: none;
+    text-align: center;
+  }
+  .select-container:last-of-type {
+    margin: 0;
+  }
+  #clear {
+    margin: 20px auto;
+  }
+  .button-row {
+    float: none;
+  }
+  .button-row.first {
+    border: none;
+    width: inherit;
+  }
+  .button-row.last {
+    margin-left: 0;
+  }
+  .button-row .btn {
+    margin: 10px auto;
+    display: inline-block;
+  }
 }

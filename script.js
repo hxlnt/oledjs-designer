@@ -7,7 +7,7 @@ drawOLED(128, 64);
 // Click handler for turning on individual pixel
 document.getElementById("screen").addEventListener("pointerdown", function (e) {
     if (e.target && e.target.matches("div.pixel")) {
-            if (tool == 'draw') { e.target.className = "pixel on undraggable"; }
+            if (tool == 'draw') { e.target.className = "pixel on"; }
             else { e.target.className = "pixel off"; }
     }
 });
@@ -15,7 +15,7 @@ document.getElementById("screen").addEventListener("pointerdown", function (e) {
 // Mouseover handler for click-and-drag drawing
 document.getElementById("screen").addEventListener("pointerover", function (e) {
     if (e.target && e.target.matches("div.pixel") && (e.buttons == 1)) {
-        if (tool == 'draw') { e.target.className = "pixel on undraggable"; }
+        if (tool == 'draw') { e.target.className = "pixel on"; }
         else { e.target.className = "pixel off"; }
     }
 });
@@ -123,7 +123,7 @@ function drawOLED(oledwidth, oledheight) {
         let createpage = document.createElement("div");
         let getpage = document.querySelectorAll("div.page");
         for (l = 0; l < 8; l++) {
-            getpage[k].appendChild(createpage.cloneNode(true)).className = "pixel off undraggable";
+            getpage[k].appendChild(createpage.cloneNode(true)).className = "pixel off";
         }
     }
 }

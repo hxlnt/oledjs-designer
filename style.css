@@ -151,3 +151,33 @@ select:focus {
   pointer-events: none;
 }
 /* ==========  Select Field End ========== */
+
+/* ========== Mobile ========== */
+
+@media only screen and (max-width : 768px) {
+  .select-container {
+    float: none;
+    border: none;
+    text-align: center;
+  }
+  .select-container:last-of-type {
+    margin: 0;
+  }
+  #clear {
+    margin: 20px auto;
+  }
+  .button-row {
+    float: none;
+  }
+  .button-row.first {
+    border: none;
+    width: inherit;
+  }
+  .button-row.last {
+    margin-left: 0;
+  }
+  .button-row .btn {
+    margin: 10px auto;
+    display: inline-block;
+  }
+}
